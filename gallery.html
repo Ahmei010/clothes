@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Madam's Boutique</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-name">Madam's Boutique</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="collectionsDropdown" role="button" data-bs-toggle="dropdown">
+                            Collections
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="collections.html#designers">Designers</a></li>
+                            <li><a class="dropdown-item" href="collections.html#attire">Types of Attire</a></li>
+                            <li><a class="dropdown-item" href="collections.html#accessories">Accessories</a></li>
+                            <li><a class="dropdown-item" href="collections.html#unstitched">Unstitched Garments</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison.html">Brand Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header py-5 mt-5">
+        <div class="container">
+            <h1 class="page-title">Hit Collection Gallery</h1>
+            <p class="lead">Explore our most popular and trending fashion collections</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter py-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <button class="btn btn-filter active" data-filter="all">All</button>
+                    <button class="btn btn-filter" data-filter="bridal">Bridal</button>
+                    <button class="btn btn-filter" data-filter="party">Party Wear</button>
+                    <button class="btn btn-filter" data-filter="casual">Casual</button>
+                    <button class="btn btn-filter" data-filter="traditional">Traditional</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section py-5">
+        <div class="container">
+            <div class="row g-4" id="galleryGrid">
+                <!-- Bridal Collection -->
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="bridal">
+                    <div class="gallery-card">
+                        <img src="images/Gemini_Generated_Image_ye9qllye9qllye9q.png" alt="Bridal Collection - Red Lehenga" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&h=1000&fit=crop" data-title="Red Bridal Lehenga">
+                        <div class="gallery-overlay">
+                            <h5>Red Bridal Lehenga</h5>
+                            <p>Designer: Maria B</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="bridal">
+                    <div class="gallery-card">
+                        <img src="images/Gemini_Generated_Image_ktyzcvktyzcvktyz.png" alt="Bridal Collection - Gold Saree" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=800&h=1000&fit=crop" data-title="Gold Bridal Saree">
+                        <div class="gallery-overlay">
+                            <h5>Gold Bridal Saree</h5>
+                            <p>Designer: Sana Safinaz</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="bridal">
+                    <div class="gallery-card">
+                        <img src="images/Gemini_Generated_Image_bax2hzbax2hzbax2.png" alt="Bridal Collection - Pink Lehenga" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&h=1000&fit=crop" data-title="Pink Bridal Lehenga">
+                        <div class="gallery-overlay">
+                            <h5>Pink Bridal Lehenga</h5>
+                            <p>Designer: Khaadi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Party Wear -->
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="party">
+                    <div class="gallery-card">
+                        <img src="images/Gemini_Generated_Image_r6bp2br6bp2br6bp.png" alt="Party Wear - Cocktail Dress" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1594633313593-bab3825d0caf?w=800&h=1000&fit=crop" data-title="Cocktail Dress">
+                        <div class="gallery-overlay">
+                            <h5>Cocktail Dress</h5>
+                            <p>Designer: Gul Ahmed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="party">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=500&h=600&fit=crop" alt="Party Wear - Evening Gown" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=800&h=1000&fit=crop" data-title="Evening Gown">
+                        <div class="gallery-overlay">
+                            <h5>Evening Gown</h5>
+                            <p>Designer: HSY</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="party">
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=500&h=600&fit=crop" alt="Party Wear - Designer Saree" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&h=1000&fit=crop" data-title="Designer Party Saree">
+                        <div class="gallery-overlay">
+                            <h5>Designer Party Saree</h5>
+                            <p>Designer: Sania Maskatiya</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Casual Wear -->
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="casual">
+                    <div class="gallery-card">
+                        <img src="images/Gemini_Generated_Image_ebkktxebkktxebkk.png" alt="Casual Wear - Kurta Set" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=800&h=1000&fit=crop" data-title="Printed Kurta Set">
+                        <div class="gallery-overlay">
+                            <h5>Printed Kurta Set</h5>
+                            <p>Comfortable daily wear</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="casual">
+                    <div class="gallery-card">
+                        <img src="images/Gemini_Generated_Image_ffpr7sffpr7sffpr.png" alt="Casual Wear - Palazzo Suit" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1594633313593-bab3825d0caf?w=800&h=1000&fit=crop" data-title="Palazzo Suit">
+                        <div class="gallery-overlay">
+                            <h5>Palazzo Suit</h5>
+                            <p>Modern casual wear</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="casual">
+                    <div class="gallery-card">
+                        <img src="images/Gemini_Generated_Image_n34bytn34bytn34b.png" alt="Casual Wear - Anarkali" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=800&h=1000&fit=crop" data-title="Anarkali Suit">
+                        <div class="gallery-overlay">
+                            <h5>Anarkali Suit</h5>
+                            <p>Stylish casual outfit</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Traditional Wear -->
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="traditional">
+                    <div class="gallery-card">
+                        <img src="images/Gemini_Generated_Image_ya2r1vya2r1vya2r.png" alt="Traditional Wear - Silk Saree" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=800&h=1000&fit=crop" data-title="Silk Saree">
+                        <div class="gallery-overlay">
+                            <h5>Silk Saree</h5>
+                            <p>Traditional elegance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="traditional">
+                    <div class="gallery-card">
+                        <img src="images/Gemini_Generated_Image_3zffh23zffh23zff.png" alt="Traditional Wear - Banarasi Saree" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=800&h=1000&fit=crop" data-title="Banarasi Saree">
+                        <div class="gallery-overlay">
+                            <h5>Banarasi Saree</h5>
+                            <p>Heritage collection</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 gallery-item" data-category="traditional">
+                    <div class="gallery-card">
+                        <img src="images/Gemini_Generated_Image_m1se13m1se13m1se.png" alt="Traditional Wear - Patiala Suit" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=800&h=1000&fit=crop" data-title="Patiala Suit">
+                        <div class="gallery-overlay">
+                            <h5>Patiala Suit</h5>
+                            <p>Traditional comfort</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Image Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="" alt="Gallery Image" id="modalImage" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-section bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="mb-3">Madam's Boutique</h5>
+                    <p>Leading store of branded and designer clothes for women.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="collections.html" class="text-white-50">Collections</a></li>
+                        <li><a href="gallery.html" class="text-white-50">Gallery</a></li>
+                        <li><a href="comparison.html" class="text-white-50">Brand Comparison</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Contact Info</h5>
+                    <p class="text-white-50"><i class="bi bi-telephone"></i> +92 300 1234567</p>
+                    <p class="text-white-50"><i class="bi bi-envelope"></i> info@madamsboutique.com</p>
+                </div>
+            </div>
+            <hr class="my-4 bg-white-50">
+            <div class="text-center">
+                <p class="mb-0 text-white-50">&copy; 2024 Madam's Boutique. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+
